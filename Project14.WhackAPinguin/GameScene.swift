@@ -23,6 +23,8 @@ class GameScene: SKScene {
             gameScore.text = "score = \(score)"
         }
     }
+    // Количество очков на конец игры
+    var totalScore: SKLabelNode!
     
     override func didMove(to view: SKView) {
         // Создана константа backGround для установки картинки фона
@@ -116,6 +118,14 @@ class GameScene: SKScene {
             gameOver.zPosition = 1
             run(SKAction.playSoundFileNamed("Game Over.m4a", waitForCompletion: false))
             addChild(gameOver)
+            totalScore = SKLabelNode(fontNamed: "Chalkduster")
+            totalScore.horizontalAlignmentMode = .center
+            totalScore.fontSize = 48
+            totalScore.fontColor = .orange
+            totalScore.text = "You get total score: \(score)"
+            totalScore.position = CGPoint(x: 512, y: 310)
+            totalScore.zPosition = 1
+            addChild(totalScore)
             return
         }
         // Если меньше 30
