@@ -44,12 +44,14 @@ class WhackSlot: SKNode {
     func show(hideTime: Double) {
         // Проверка видно или нет
         if isVisible { return }
+       
         // Сохранить оригинальный размер изображения
         charNode.xScale = 1
         charNode.yScale = 1
         
         // Показ charNode
         charNode.run(SKAction.moveBy(x: 0, y: 80, duration: 0.05))
+      
         isVisible = true
         isHit = false
         
@@ -85,5 +87,19 @@ class WhackSlot: SKNode {
         let notVisible = SKAction.run { [weak self] in self?.isVisible = false  }
         let sequence = SKAction.sequence([delay, hide, notVisible])
         charNode.run(sequence)
+        smoke()
+       
+    }
+    
+    func smoke() {
+        if isVisible {
+            if let smokeParticles = SKEmitterNode(fileNamed: "Smoke") {
+                smokeParticles.position = charNode.position
+                addChild(smokeParticles)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {[weak self] in
+                   smokeParticles.removeFromParent()
+                }
+            }
+        }
     }
 }
