@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2B7C93F27218CCD00FE1614 /* Game Over.m4a in Resources */ = {isa = PBXBuildFile; fileRef = C2B7C93E27218CCD00FE1614 /* Game Over.m4a */; };
 		C2E32075271D715900B1F285 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E32074271D715900B1F285 /* AppDelegate.swift */; };
 		C2E32077271D715900B1F285 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = C2E32076271D715900B1F285 /* GameScene.sks */; };
 		C2E3207B271D715900B1F285 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E3207A271D715900B1F285 /* GameScene.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C2B7C93E27218CCD00FE1614 /* Game Over.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Game Over.m4a"; sourceTree = "<group>"; };
 		C2E32071271D715900B1F285 /* Project14.WhackAPinguin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project14.WhackAPinguin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E32074271D715900B1F285 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2E32076271D715900B1F285 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				C2E3207E271D715900B1F285 /* Main.storyboard */,
 				C2E32081271D715B00B1F285 /* Assets.xcassets */,
 				C2E32083271D715B00B1F285 /* Info.plist */,
+				C2B7C93E27218CCD00FE1614 /* Game Over.m4a */,
 				C2E32089271D743A00B1F285 /* whack.caf */,
 				C2E3208A271D743A00B1F285 /* whackBad.caf */,
 			);
@@ -136,6 +139,7 @@
 				C2E3208C271D743A00B1F285 /* whackBad.caf in Resources */,
 				C2E32080271D715900B1F285 /* Main.storyboard in Resources */,
 				C2E32077271D715900B1F285 /* GameScene.sks in Resources */,
+				C2B7C93F27218CCD00FE1614 /* Game Over.m4a in Resources */,
 				C2E32082271D715B00B1F285 /* Assets.xcassets in Resources */,
 				C2E3208B271D743A00B1F285 /* whack.caf in Resources */,
 			);
